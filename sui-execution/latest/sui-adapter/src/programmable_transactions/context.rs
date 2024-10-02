@@ -189,7 +189,7 @@ mod checked {
                 !gas_charger.is_unmetered(),
                 protocol_config,
                 metrics.clone(),
-                tx_context.epoch(),
+                tx_context,
             );
 
             // Set the profiler if in CLI
