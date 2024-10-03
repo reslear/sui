@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["ReaderWriterConfig"],"fn":["set_up","start_test_indexer","start_test_indexer_impl","wait_for_checkpoint","wait_for_objects_snapshot"],"struct":["SuiTransactionBlockResponseBuilder"]};
