@@ -110,7 +110,7 @@ impl CommitObserver {
         if let Some(last_commit) = &last_commit {
             let last_commit_index = last_commit.index();
 
-            assert!(last_commit_index >= last_processed_commit_index);
+            debug_assert!(last_commit_index >= last_processed_commit_index);
             if last_commit_index == last_processed_commit_index {
                 debug!("Nothing to recover for commit observer as commit index {last_commit_index} = {last_processed_commit_index} last processed index");
                 return;
