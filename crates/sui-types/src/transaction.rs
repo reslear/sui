@@ -3339,3 +3339,9 @@ impl TransactionKey {
         }
     }
 }
+
+impl From<TransactionDigest> for TransactionKey {
+    fn from(digest: TransactionDigest) -> Self {
+        TransactionKey::Digest(digest)
+    }
+}
